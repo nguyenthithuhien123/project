@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./csshome.css">
+</head>
+
+<body>
+    <!-- TIÊU ĐỀ -->
+    <div class="home_header">
+        <h1>PHIM GIẢI TRÍ</h1>
+        <input oninput="searchPhim()" type="text" id="seach" placeholder="Mời bạn nhập tên phim">
+        <div class="sign_contener">
+            <p id="helloname"><b>Đăng nhập để mua vé</b></p>
+            <p id="gmail_hearder"></p>
+            <button class="an" id="logout" onclick="logout()">LogOut</button>
+            <div class="signin_signup">
+                <a href="http://127.0.0.1:5500/SignIn.html">SignIn</a>
+                <a href="http://127.0.0.1:5500/SignUp.html">SignUp</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <div class="thanhcongcu">
+        <a onclick="showhome()" href="http://127.0.0.1:5500/home.html">TRANG CHỦ</a>
+        <a href="http://127.0.0.1:5500/home.html">PHIM BỘ</a>
+        <a href="http://127.0.0.1:5500/home.html">PHIM LẺ</a>
+        <a href="http://127.0.0.1:5500/home.html">PHIM CHIẾU RẠP</a>
+        <a href="http://127.0.0.1:5500/home.html">QUỐC GIA</a>
+        <a href="http://127.0.0.1:5500/home.html">THỂ LOẠI </a>
+        <a href="https://www.facebook.com/profile.php?id=100008012837120">LIÊN HỆ</a>
+        <button onclick="showcart()" class="an" id="giohang">GIỎ HÀNG</button>
+    </div>
+    <!-- PHẦN THÂN TRANG -->
+    <div id="phanthan">
+        <!-- TIÊU ĐỀ PHIM NỔI BẬT -->
+        <h2 class="phimnoibath2">PHIM NỔI BẬT</h2>
+        <div class="phimnoibat_contener">
+            <img onclick="preImg()" class="pre_next" src="./img/PRE.jpg" alt="">
+            <div class="phimnoibat">
+
+            </div>
+            <img onclick="nextImg()" class="pre_next" src="./img/NEXT.jpg" alt="">
+        </div>
+        <div class="tieudetraiphai">
+            <div class="phimviph2">
+                <h2>PHIM VIP</h2>
+            </div>
+            <div class="phimsapramatH2">
+                <h2>PHIM SẮP CHIẾU</h2>
+            </div>
+        </div>
+        <!-- PHÂN TRANG PHIM VÍP -->
+        <div class="phantrang">
+            <span onclick="prepaste()" class="material-symbols-outlined">
+                arrow_back_ios
+            </span>
+
+            <ul id="paste">
+            </ul>
+            <span onclick="nextpaste()" class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>
+        </div>
+        <!-- HIỂN THỊ PHIM TRONG PHIM VÍP -->
+        <div class="phimvip_contener">
+
+        </div>
+        <!-- PHIM SẮP CHIẾU BÊN PHẢI -->
+        <div class="contener_phai">
+
+            <div class="contener_phai_item">
+
+            </div>
+        </div>
+        <!-- PHIM CHIẾU RẠP, PHẦN MUA VÉ -->
+
+        <div class="phimchieurap_contener">
+            <div class="phimchieuraph2">
+                <!-- hiển thị tiêu đề -->
+                <h2>PHIM CHIẾU RẠP</h2>
+                <div class="phantrang_phimrap">
+                    <span onclick="prepaste_phimrap()" class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+
+                    <ul id="paste_phimrap">
+                    </ul>
+                    <span onclick="nextpaste_phimrap()" class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                </div>
+            </div>
+            <!-- hiện thị phim -->
+            <div class="phimchieurap">
+
+            </div>
+
+        </div>
+        <!-- CUỐI TRANG -->
+        <footer>
+            <div>PHIM GIẢI TRÍ.HTLM</div>
+
+        </footer>
+    </div>
+    <!-- PHẦN GIỎ HÀNG ẨN KHI CHƯA ĐĂNG NHẬP, XUẤT HIỆN  KHI ĐĂNG NHẬP -->
+    <div class="an" id="cart">
+        <h4 id="payed" class="an">Chúc mừng bạn thanh toán thành công !</h4>
+        <div id="thanhtoan">
+            <div class="tt">
+                <p>SỐ TIỀN THANH TOÁN <span id="pay"></span></p>
+            </div>
+            <div onclick="payed()" id="buttonthanhtoan">
+                <button>THANH TOÁN</button>
+            </div>
+        </div>
+        <div class="giohang">
+            <table>
+                <!-- tiêu đề giỏ hàng -->
+                <thead class="tieude">
+                    <tr>
+                        <th>NO</th>
+                        <TH>TÊN SẢN PHẨM</TH>
+                        <TH>SỐ VÉ</TH>
+                        <TH>GIÁ VÉ</TH>
+                        <TH>TỔNG SỐ TIỀN</TH>
+                    </tr>
+                </thead>
+                <!-- Sản phẩm mua trong giỏ hàng -->
+                <tbody id="item">
+                </tbody>
+            </table>
+        </div>
+        <div id="camon">
+            <h3>Phim giải trí</h3>
+            <H5>Xin trân thành cảm ơn!</H5>
+            <H5>Chúc bạn xem phim vui vẻ</H5>
+        </div>
+    </div>
+
+    <script src="./js_phan_phim_noi_bat.js"></script>
+    <script src="./js_Phim_Vip.js"></script>
+    <script src="./js_phim_sap_chieu.js"></script>
+    <script src="./js_phim_chieu_rap.js"></script>
+    <script src="./js_dangnhap.js"></script>
+    <script src="./js_showheader.js"></script>
+    <script src="./js_renderLogin_addtocart.js"></script>
+    <script src="./js_showcart.js"></script>
+</body>
+
+</html>

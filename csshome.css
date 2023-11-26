@@ -1,0 +1,628 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(10, 26, 40);
+}
+
+/* PHẦN THANH TIÊU ĐỀ */
+.home_header {
+    margin: 0 auto;
+    height: 80px;
+    width: 80%;
+    background-image: url(./img/nen\ header.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: "Brush Script MT", cursive;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 200px;
+}
+
+#seach {
+    margin-left: 80px;
+    height: 30px;
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid #db6532;
+    background: transparent;
+    box-shadow: 0px 0px 2px 2px rgb(238, 93, 45);
+    color: #efefe6;
+}
+
+.sign_contener {
+    margin-left: 100px;
+    width: 200px;
+    text-align: center;
+    gap: 10px;
+
+}
+
+.sign_contener p {
+    color: rgb(228, 70, 26);
+    font-family: "Brush Script MT", cursive;
+    margin-bottom: 10px;
+}
+
+.sign_contener a {
+    text-decoration: none;
+    height: 30px;
+    padding: 5px;
+    background: linear-gradient(to right, #f334e9, #5f32db);
+    font-family: "Brush Script MT", cursive;
+    border-radius: 10px;
+}
+
+
+.sign_contener a:hover {
+    background: linear-gradient(to right, #f3f034, #32db32);
+    cursor: pointer;
+}
+
+#logout {
+    text-decoration: none;
+    height: auto;
+    padding: 5px;
+    background: linear-gradient(to right, #0d2552, #5f32db);
+    font-family: "Brush Script MT", cursive;
+    border-radius: 10px;
+    font-size: 10px;
+    width: auto;
+    color: rgb(21, 123, 125);
+    border: none;
+}
+
+#logout:hover {
+    background: linear-gradient(to right, #f33434, #db32c2);
+}
+
+
+/* THANH ĐIỀU HƯỚNG */
+.thanhcongcu {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 70%;
+    background: transparent;
+}
+
+.thanhcongcu a {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #efefe6;
+}
+
+.thanhcongcu a:hover {
+    padding: 5px;
+    background: linear-gradient(to right, #f3f034, #db6532);
+    color: brown;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#thantrang {
+    margin: 0 auto;
+}
+
+/* PHIM NỔI BẬT */
+.phimnoibath2 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+
+}
+
+h2 {
+    color: #f3f034;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 2px solid chocolate;
+}
+
+.pre_next {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-top: 100px;
+
+}
+
+.pre_next:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.phimnoibat_item img {
+    width: 200px;
+    height: 250px;
+}
+
+
+.phimnoibat_item p {
+    color: aliceblue;
+}
+
+.phimnoibat_item {
+    border: 5px outset rgb(27, 20, 31);
+    background: linear-gradient(to right, #321f0f, #0976d6);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.phimnoibat_item:hover {
+    opacity: 0.7;
+}
+
+.phimnoibat_contener {
+    background-color: #321f0f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    width: 80%;
+    padding: 5px;
+    margin: 50px auto;
+    border: 5px solid rgb(82, 13, 5);
+}
+
+.phimnoibat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+    width: 90%;
+}
+
+.phimnoibat_contener a {
+    text-decoration: none;
+    color: rgb(237, 109, 11);
+    cursor: pointer;
+}
+
+/* PHÂN TRANG TRONG PHIM VIP */
+.phantrang {
+    display: flex;
+    color: #efefe6;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#paste {
+    display: flex;
+    gap: 20px;
+}
+
+#paste li {
+
+    width: 40px;
+    text-align: center;
+    list-style: none;
+}
+
+#paste li:hover {
+    background: linear-gradient(to right, #18320f, #c1d609);
+    cursor: pointer;
+}
+
+.pastecolor {
+    background: linear-gradient(to right, #321f0f, #0976d6);
+    height: 30px;
+    width: 40px;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    width: 40px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.material-symbols-outlined:hover {
+    color: #25e779;
+    background: linear-gradient(to right, rgb(48, 141, 49), #d6c109);
+    cursor: pointer;
+}
+
+/* HIỂN THỊ PHIM VIP */
+.phimvip_contener {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: space-between;
+    margin-left: 9%;
+    border: 1px solid cornsilk;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.phimvip_item img {
+    height: 200px;
+    width: 180px;
+}
+
+.contenertrai {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.phimvip_item {
+    border: 5px outset rgb(27, 20, 31);
+
+}
+
+.phimviph2 {
+    width: 65%;
+    border-bottom: 2px solid chocolate;
+}
+
+.phimvip_item p {
+    background: linear-gradient(to right, #5a41a6, #0a7b83);
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    width: 180px;
+    height: 30px;
+    padding: 2px;
+}
+
+.phimvip_item a {
+    display: flex;
+    flex-direction: column;
+}
+
+.phimvip_item:hover {
+    opacity: 0.8;
+    box-shadow: 0px 0px 15px 2px rgb(144, 16, 223);
+}
+
+/* TIÊU ĐỀ PHIM SẮP CHIẾU */
+.tieudetraiphai {
+    display: flex;
+    width: 82%;
+    margin: 0 auto;
+    justify-content: left;
+    gap: 3%;
+}
+
+.phimsapramatH2 {
+    border-bottom: 2px solid chocolate;
+    float: right;
+    width: 35%;
+}
+
+.contener_phai {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 28%;
+    margin-right: 8%;
+    overflow: auto;
+    height: 1803px;
+    border: 1px solid cornsilk;
+    padding: 10px;
+}
+
+.phimsapramat_item {
+    display: flex;
+    flex-direction: row;
+    border: 5px outset rgb(27, 20, 31);
+    width: 100%;
+    height: 100px;
+}
+
+.phimsapramat_item img {
+    height: 100px;
+    width: 80px;
+}
+
+.phimsapramat_item p {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    color: #e72525;
+    font-size: 15px;
+}
+
+.phimsapramat_item:hover {
+    opacity: 0.8;
+}
+
+.phimsapramat_item p:hover {
+    color: #f3f034;
+}
+
+/* PHIM CHIẾU RAP */
+.phimchieurap_item img {
+    height: 200px;
+    width: 180px;
+}
+
+.phimchieurap_item p {
+    background: linear-gradient(to right, #5a41a6, #0a7b83);
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    width: 180px;
+    font-size: 12px;
+}
+
+.phimchieurap_item span {
+    background: none;
+    width: 50px;
+    text-align: center;
+    border-radius: 10%;
+    background: linear-gradient(to right, #a6a441, #83200a);
+}
+
+.phimchieurap_item:hover {
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px 2px rgb(223, 30, 16);
+}
+
+.phimchieurap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.phimchieurap_contener {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: space-between;
+    margin-left: 9%;
+    margin-top: 20px;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.phimchieurap_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.phimchieurap {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid cornsilk;
+    padding: 10px;
+}
+
+.muave {
+    display: flex;
+    background: linear-gradient(to right, rgb(225, 64, 42), rgb(230, 233, 102));
+    margin: 10px auto;
+    width: 78%;
+    border-radius: 10%;
+    justify-content: space-around;
+    padding: 5px;
+
+}
+
+
+footer {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: aliceblue;
+    font-family: "Brush Script MT", cursive;
+    font-size: 30px;
+}
+
+.an {
+    display: none;
+}
+
+.phantrang_phimrap {
+    margin-left: 160px;
+}
+
+/* css gio hang */
+#thanhtoan {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 120px;
+    padding: 10px;
+    justify-content: right;
+    gap: 50px;
+    color: #f0c30f;
+}
+
+.tt p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+span {
+    color: #ef866f;
+}
+
+#buttonthanhtoan button {
+    height: auto;
+    width: auto;
+    padding: 5px;
+    border-radius: 20%;
+    background: linear-gradient(to right, rgb(225, 64, 42), rgb(230, 233, 102));
+}
+
+#buttonthanhtoan button:hover {
+    background: linear-gradient(to right, rgb(210, 225, 42), rgb(102, 233, 117));
+    cursor: pointer;
+}
+
+img {
+    height: 150px;
+    width: 100px;
+}
+
+table {
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid rgb(244, 246, 241);
+    background-color: rgb(235, 218, 217);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+
+th {
+    border: 2px solid rgb(41, 19, 3);
+    padding: 5px;
+}
+
+td {
+    border: 1px solid rgb(16, 17, 17);
+    padding: 2px;
+}
+
+.sanpham {
+    display: flex;
+    text-align: left;
+    gap: 10px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tang_giam button {
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10%;
+    border: 2px outset chocolate;
+    background: linear-gradient(to right, #e1a68d, #debec1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #ffe70f, #a9d66b);
+}
+
+.sove {
+    display: flex;
+    gap: 10px;
+    border: 1px outset crimson;
+    padding: 5px;
+    align-items: center;
+}
+
+.tang_giam {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.chitiet {
+    margin-top: 20px;
+}
+
+#giohang {
+    width: auto;
+    background: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: #f10606;
+    font-size: 17px;
+    border: none;
+    margin-top: -6px;
+}
+
+#giohang:hover {
+    padding: 5px;
+    background: linear-gradient(to right, #f3f034, #db6532);
+    color: brown;
+    border-radius: 10%;
+    cursor: pointer;
+}
+#camon{
+    font-family: "Brush Script MT", cursive;
+    font-size: 30px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 2px solid chocolate;
+    color: #ecefe7;
+}
+#camon h3{
+    color: #d3d609;
+    font-size: 50px;
+}
+#gmail_hearder {
+    color: #0a7b83;
+}
+#cart h4{
+    margin-top: 120px;
+    font-family: "Brush Script MT", cursive;
+    font-size:30px;
+    text-align: center;
+    color: white;
+}
+
+/* PHÂN TRANG TRONG PHIM CHIẾU RẠP */
+.phantrang_phimrap {
+    display: flex;
+    color: #efefe6;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#paste_phimrap {
+    display: flex;
+    gap: 20px;
+}
+
+#paste_phimrap li {
+
+    width: 40px;
+    text-align: center;
+    list-style: none;
+}
+
+#paste_phimrap li:hover {
+    background: linear-gradient(to right, #18320f, #c1d609);
+    cursor: pointer;
+}
+
+.pastecolor_phimrap {
+    background: linear-gradient(to right, #321f0f, #0976d6);
+    height: 30px;
+    width: 40px;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    width: 40px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.material-symbols-outlined:hover {
+    color: #25e779;
+    background: linear-gradient(to right, rgb(48, 141, 49), #d6c109);
+    cursor: pointer;
+}
